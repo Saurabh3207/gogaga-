@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8a2e7e0724.js" crossorigin="anonymous"></script>
+    <title>Gogaga Holidays</title>
+    <link rel="icon" style="width:10px" type="image/png" href="gogagaLogo.png">
+    <link rel ="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="sectionHome">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="gogagaLogo.png" class="gogaga-logo" />
+                </a>        
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto d-flex justify-content-lg-around">
+                        <a class="nav-link active" id="navItem1" href="#sectionHome">
+                            <i class="bi bi-house"></i>
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+                        <a class="nav-link" href="#holidayPackg" id="navItem2">
+                            <i class="bi bi-file-earmark-richtext"></i>
+                            Holiday Packages
+                        </a>
+                        <a class="nav-link" href="#flightBooking" id="navItem3">
+                            <i class="bi bi-airplane"></i>
+                            Flight Booking
+                        </a>
+                        <a class="nav-link" onclick="display('sectionHotelbooking')" id="navItem4">
+                            <i class="fa-solid fa-hotel" style="color: #0a0a0a;"></i>
+                            Hotel Booking
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="main-bg-container d-flex justify-content-center flex-column" id="sectionHome">
+            <div class="text-left">
+                <h1 class="homeHeading mb-3">Curate Your Travel Story</h1>
+                <p class="homeCaption mb-4">Each moment, each destination—handpicked for you.Choose Your Holiday Package to embark your Journey</p>
+                <button class="custom-button" onclick="display('sectionPackages')">Select Your Package</button>
+            </div>
+        </div>
+        <div class="holiday-section pt-5 pb-5" id="holidayPackg">
+            <div class="container shadow">
+                <div class="row inner-container">
+                    <div class="col-12">
+                        <h1 class="holiday-section-heading">Explore Offers On Holiday Packages</h1>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow holiday-item-card p-3 mb-3">
+                            <img src="./img1.jpg" class="holiday-item-image w-100" />
+                            <p class="holiday-para">ON ADVENTURES</p>
+                            <h1 class="holiday-card-title">Get 50% OFF</h1>
+                            <a href="" class="holiday-item-link">
+                                Book Now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#280c6d" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow holiday-item-card p-3 mb-3">
+                            <img src="./img2.jpg" class="holiday-item-image w-100" />
+                            <p class="holiday-para">ON FLIGHTS</p>
+                            <h1 class="holiday-card-title">Get 50% OFF</h1>
+                            <a href="#flightBooking" class="holiday-item-link">
+                                Book Now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#280c6d" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow holiday-item-card p-3 mb-3">
+                            <img src="./img3.jpg" class="holiday-item-image w-100" />
+                            <p class="holiday-para">ON HOTELS</p>
+                            <h1 class="holiday-card-title">Get 20-40% OFF</h1>
+                            <a href="" class="holiday-item-link">
+                                Book Now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#280c6d" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow holiday-item-card p-3 mb-3">
+                            <img src="./img4.jpg" class="holiday-item-image w-100" />
+                            <p class="holiday-para">ON HIRING VEIHCLES</p>
+                            <h1 class="holiday-card-title">Get 10% OFF</h1>
+                            <a href="" class="holiday-item-link">
+                                Book Now
+                                <svg width="16px" height="16px" viewBox="0 0 16 16" class="bi bi-arrow-right-short" fill="#280c6d" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="flightBooking">
+            <div class="container">
+                <div class="col-12">
+                    <h1 class="holiday-section-heading">Book Flights at Lowest Price %</h1>
+                </div>
+                <form class="d-flex flex-column ">
+                    <div class="d-flex flex-row justify-content-around" >
+                        <div>
+                            <label for="from">From:</label><br>
+                            <input type="text" id="from" name="from" required>
+                        </div>
+                        <div>
+                            <label for="to">To:</label><br>
+                            <input type="text" id="to" name="to" required>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row justify-content-around mb-4" >
+                        <div>
+                            <label for="departure">Departure Date:</label><br>
+                            <input type="date" id="departure" name="departure" required>
+                        </div>
+                        <div>
+                            <label for="return">Return Date:</label><br>
+                            <input type="date" id="return" name="return" required>
+                        </div>
+                    </div>
+                    <input type="submit" class="custom-button align-self-center" value="Book Flight">
+                </form>
+            </div>
+        </div>
+        <div class="follow-us-section pt-5 pb-5" id="follow">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="follow-us-section-heading">Follow Us</h1>
+                        <div class=" d-flex flex-container justify-content-center">
+                            <div>
+                                <button class="follow-us-icon-container">
+                                    <i class="icon fa-brands fa-x-twitter fa-fade"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="follow-us-icon-container" href="https://www.linkedin.com/company/gogagaholidays/?originalSubdomain=in">
+                                    <i class="icon  fa-brands fa-linkedin  fa-fade"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="follow-us-icon-container" href="https://www.instagram.com/gogagaholidays/">
+                                    <i class="icon fa-brands fa-instagram fa-fade"></i>
+                                </button>
+                            </div>
+                            <div>
+                                <button class="follow-us-icon-container">
+                                    <i class="icon  fa-brands fa-whatsapp  fa-fade"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <img src="gogagaLogo.png" class="gogaga-logo" />
+                        <h1 class="footer-section-mail-id" href="https://www.gogagaholidays.com/contact-us">support@gogagaholidays.in</h1>
+                        <p class="footer-section-address">
+                            406 & 408, 4th Floor, Block-2,<br>Whitehouse, Begumpet-500016,Hyderabad, Telangana, India
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="sectionHotelbooking" class="d-flex flex-column justify-content-center align-items-center">
+        <div class="container hotelbooking">
+            <h2>Hotel Booking</h2>
+            <form>
+                <label for="searchHotels">Search Term:</label><br>
+                <input type="search" id="searchHotels" placeholder="Search">
+            </form>
+            <div id="hotelList">
+                <ul id="hotelList">
+                    <li>
+                        <h3>Taj Lake Palace</h3>
+                        <img src="taj-lake-palace.jpg" alt="Taj Lake Palace">
+                        <p>This 18th-century historical palace, situated in the magnificent City of Udaipur, is undeniably one of the best hotels in India.</p>
+                        <button onclick="display('sectionBooking')">Book Now</button>
+                    </li>
+                    <li>
+                        <h3>The Oberoi Amarvilas</h3>
+                        <img src="oberoi-amarvilas.jpg" alt="The Oberoi Amarvilas">
+                        <p>Located in Agra, this luxury hotel offers stunning views of the Taj Mahal. It's known for its Mughal style architecture and beautifully landscaped gardens.</p>
+                        <button onclick="display('sectionBooking')">Book Now</button>
+                    </li>
+                    <li>
+                        <h3>The Leela Palace</h3>
+                        <img src="leela-palace.jpg" alt="The Leela Palace">
+                        <p>Situated in New Delhi, this modern palace hotel is known for its grandeur and hospitality. It features a rooftop terrace with panoramic city views.</p>
+                        <button onclick="display('sectionBooking')">Book Now</button>
+                    </li>
+                </ul>
+            </div>
+            <form id="sectionBooking" style="display: none;">
+                <h2>Book Your Hotel</h2>
+                <label for="hotel">Hotel:</label><br>
+                <input type="text" id="hotel" name="hotel" required><br>
+                <label for="rooms">Number of Rooms:</label><br>
+                <input type="number" id="rooms" name="rooms" required><br>
+                <label for="guests">Number of Guests:</label><br>
+                <input type="number" id="guests" name="guests" required><br>
+                <input type="submit" value="Book Hotel">
+            </form>
+        </div>
+    </div>
+    
+    
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
